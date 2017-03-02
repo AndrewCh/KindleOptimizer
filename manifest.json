@@ -1,9 +1,11 @@
 {
 	"manifest_version":2,
-
+	"icons": {
+    "128": "icon2_128_128.png"
+	},
 	"name":"Kindle Optimizer",
 	"description":"Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.",
-	"version":"1.6",
+	"version":"1.7",
 
 	"page_action": {
 		"default_icon":"icon.png",
@@ -13,7 +15,7 @@
 	
 	"content_scripts":[
 		{
-			"matches":["https://read.amazon.com/*"],
+			"matches":["https://*/*"],
 			"js":["csOptimizer.js", "jquery-1.10.2.js"],
 			"all_frames": true
 		}
