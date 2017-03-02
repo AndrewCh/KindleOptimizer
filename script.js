@@ -29,7 +29,7 @@ var w = null;
 var kDoc = null;
 var kObj = null;
 
-if (typeof window.KindleReaderContextMenu !== 'undefined') {
+/*if (typeof window.KindleReaderContextMenu !== 'undefined') {
     w = window;
 } else if (window.length) {
     for (var i=0;i<window.length;i++) {
@@ -38,13 +38,14 @@ if (typeof window.KindleReaderContextMenu !== 'undefined') {
             break;
         }
     }
-}
+}*/
+
+w = window;
 
 if (typeof w === 'object') {
     kObj = w.KindleReaderContextMenu;
     kDoc = w.document;
-
-    if (typeof kObj.ACRExtensions === 'undefined') {
+   // if (typeof kObj.ACRExtensions === 'undefined') {
         kObj.ACRExtensions = true;
         var oldMethod = kObj.show;
         kObj.show = function () {
@@ -74,7 +75,7 @@ if (typeof w === 'object') {
 	        $('#ACRExtensions_searchB_sep', kDoc).remove();
             $('#ACRExtensions_searchB', kDoc).remove();
             var sepEl = $('<div id="ACRExtensions_searchB_sep" class="kindle_menu_separator"></div>');
-            var searchB = $('<div id="ACRExtensions_searchB" class="kindle_menu_button button_enabled ui-corner-left">GSearch</div>');
+            var searchB = $('<div id="ACRExtensions_searchB" class="kindle_menu_button button_enabled ui-corner-left">Search</div>');
             $('#kindle_menu_border', kDoc).append(sepEl).append(searchB);
             setTimeout(function(){
                 sepEl.show();
@@ -94,7 +95,7 @@ if (typeof w === 'object') {
 			$('#ACRExtensions_translateB_sep', kDoc).remove();
             $('#ACRExtensions_translateB', kDoc).remove();
             var sepEl = $('<div id="ACRExtensions_translateB_sep" class="kindle_menu_separator"></div>');
-            var translateB = $('<div id="ACRExtensions_translateB" class="kindle_menu_button button_enabled ui-corner-left">GTranslate</div>');
+            var translateB = $('<div id="ACRExtensions_translateB" class="kindle_menu_button button_enabled ui-corner-left">Translate</div>');
             $('#kindle_menu_border', kDoc).append(sepEl).append(translateB);
             setTimeout(function(){
                 sepEl.show();
@@ -105,9 +106,25 @@ if (typeof w === 'object') {
 				
 					var content = r.cloneContents(); 
 					var text = content.textContent;
-					var url = 'https://translate.google.com/?hl=en#en/ru/';
+					var url = 'https://translate.google.com/?hl=en#en/fr/';
                     var newTab = window.open(url + text, '_blank');
 					newTab.focus();
+                }
+            });
+
+  	    $('#ACRExtensions_copyB_sep', kDoc).remove();
+            $('#ACRExtensions_copyB', kDoc).remove();
+            var sepEl = $('<div id="ACRExtensions_copyB_sep" class="kindle_menu_separator"></div>');
+            var copyB = $('<div id="ACRExtensions_copyB" class="kindle_menu_button button_enabled ui-corner-left">Copy</div>');
+            $('#kindle_menu_border', kDoc).append(sepEl).append(copyB);
+            setTimeout(function(){
+                sepEl.show();
+                copyB.removeClass('button_hidden');
+            }, 1);
+            $('#ACRExtensions_copyB', kDoc).click(function (evt) {
+                if (r) {
+                    var newW = window.open('', 'ACRExtensions', "height=400,width=400,location=0,menubar=0,scrollbars=1,toolbar=0");
+                    newW.document.body.appendChild(r.cloneContents());
                 }
             });
 
@@ -115,9 +132,9 @@ if (typeof w === 'object') {
         };
 
         //alert('Kindle Optimizer is now active.');
-    } else {
+   /* } else {
         alert('Kindle Optimizer is already active.');
-    }
+    }*/
 } else {
     alert('Error: Kindle Optimizer is not active. The Amazon Cloud Reader window could not be found.');
 }

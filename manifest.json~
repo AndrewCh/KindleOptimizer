@@ -3,7 +3,7 @@
 
 	"name":"Kindle Optimizer",
 	"description":"Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.",
-	"version":"1.6",
+	"version":"1.5",
 
 	"page_action": {
 		"default_icon":"icon.png",
