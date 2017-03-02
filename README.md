@@ -18,6 +18,10 @@ How to use:<br/>
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
 
+What's new in version 1.7:<br/> 
+1. Now extension is available on every local amazon site. Enjoy.<br/> 
+2. An icon for the extension was added to be shown in Chrome Extensions page.<br/> 
+
 What's new in version 1.6:<br/> 
 1. Default language to be opened in Google translate was set to French.<br/> 
 
