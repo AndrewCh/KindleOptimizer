@@ -1,7 +1,7 @@
 # KindleOptimizer
 Kindle Cloud Reader Chrome Extension
 
-##Current version is 1.6
+##Current version is 1.7
 
 Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.
 Kindle Optimizer helps you
@@ -13,18 +13,18 @@ Kindle Optimizer helps you
 - Copy text or pictures from Kindle Cloud Reader to a separate window.
 
 
-How to use:
-1. Add Kindle Optimizer from Chrome Web Store.
-2. Log in to your Kindle Cloud Reader account.
-3. Enjoy!
+How to use:<br/> 
+1. Add Kindle Optimizer from Chrome Web Store.<br/> 
+2. Log in to your Kindle Cloud Reader account.<br/> 
+3. Enjoy!<br/> 
 
-What's new in version 1.6:
-1. Default language to be opened in Google translate was set to French.
+What's new in version 1.6:<br/> 
+1. Default language to be opened in Google translate was set to French.<br/> 
 
-Known issues:
-1. First time a text is selected additional 'Search','Translate' and 'Copy' tabs may not appear in pop-up(the workaround is to select text again).
+Known issues:<br/> 
+1. First time a text is selected additional 'Search','Translate' and 'Copy' tabs may not appear in pop-up(the workaround is to select text again).<br/> 
 
-2. Due to current design 'Delete Highlight' title may lay upon 'Note'/ 'Edit Note' title.
+2. Due to current design 'Delete Highlight' title may lay upon 'Note'/ 'Edit Note' title.<br/> 
 
-NOTE: It is based on the open source from 
+NOTE: It is based on the open source from<br/> 
 https://github.com/binarycrafts/ACRExtensions
