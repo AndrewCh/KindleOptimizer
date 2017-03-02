@@ -27,7 +27,6 @@ What's new in version 1.6:<br/>
 
 Known issues:<br/> 
 1. First time a text is selected additional 'Search','Translate' and 'Copy' tabs may not appear in pop-up(the workaround is to select text again).<br/> 
-
 2. Due to current design 'Delete Highlight' title may lay upon 'Note'/ 'Edit Note' title.<br/> 
 
 NOTE: It is based on the open source from<br/> 
