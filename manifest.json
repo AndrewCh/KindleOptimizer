@@ -5,7 +5,11 @@
 	},
 	"name":"Kindle Optimizer",
 	"description":"Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.",
+<<<<<<< HEAD
 	"version":"2.0",
+=======
+	"version": "1.9",
+>>>>>>> origin/master
 
 	"page_action": {
 		"default_icon":"icon.png",
