@@ -5,7 +5,7 @@
 	},
 	"name":"Kindle Optimizer",
 	"description":"Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.",
-	"version":"1.9",
+	"version":"2.0",
 
 	"page_action": {
 		"default_icon":"icon.png",
@@ -15,7 +15,8 @@
 	
 	"content_scripts":[
 		{
-			"matches":["https://read.amazon.com/*", "https://read.amazon.ca/*", "https://read.amazon.uk/*", "https://read.amazon.de/*", "https://lire.amazon.fr/*"], 
+			"matches":["https://read.amazon.com/*", "https://read.amazon.ca/*", "https://read.amazon.uk/*", "https://read.amazon.de/*", "https://lire.amazon.fr/*",
+			"https://leggi.amazon.it/*"], 
 			"js":["csOptimizer.js", "jquery-1.10.2.js"],
 			"all_frames": true
 		}
