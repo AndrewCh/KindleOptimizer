@@ -20,8 +20,8 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 /*  Adjustments of this script made by 
-    Copyright (c) 2015 Andrei Cheremskoy,
-	http://GetToCode.com      */
+    Copyright (c) 2017 Andrei Cheremskoy,
+	https://GetToCode.com      */
 
 (function () {
 
@@ -86,7 +86,7 @@ if (typeof w === 'object') {
 				
 					var content = r.cloneContents(); 
 					var text = content.textContent;
-					var url = 'https://www.google.co.il/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=';
+					var url = 'https://www.google.com/?gfe_rd=cr&ei=ogkeWeD0NvTJXpeog4gK&gws_rd=cr&fg=1#q=';
                     var newTab = window.open(url + text, '_blank');
 					newTab.focus();
                 }
