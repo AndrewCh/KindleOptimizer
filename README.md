@@ -18,6 +18,9 @@ How to use:<br/>
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
 
+What's new in version 2.2:<br/> 
+1. Kindle Cloud Reader in Brazil is now supported<br/> 
+ - https://ler.amazon.com.br/<br/> 
 
 What's new in version 2.1:<br/> 
  'Search' functionality bug fixed.<br/> 
