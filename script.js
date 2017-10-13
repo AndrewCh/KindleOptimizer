@@ -106,7 +106,24 @@ if (typeof w === 'object') {
 				
 					var content = r.cloneContents(); 
 					var text = content.textContent;
-					var url = 'https://translate.google.com/?hl=en#en/fr/';
+					
+					function readCookie(name) {
+						var c = kDoc.cookie.split('; '),
+						cookies = {}, i, C;
+						for (i = c.length - 1; i >= 0; i--) {
+							C = c[i].split('=');
+							cookies[C[0]] = C[1];
+						}
+						return cookies[name];
+					}
+					//alert(readCookie('googtrans'));
+					var currentLanguage = readCookie('googtrans');
+					
+					if(currentLanguage === '' | currentLanguage === 'undefined'){
+						currentLanguage = 'en';
+					}
+					var url = 'https://translate.google.com/?hl=en#en/' + currentLanguage + '/';
+					//alert(url);
                     var newTab = window.open(url + text, '_blank');
 					newTab.focus();
                 }
