@@ -23,7 +23,7 @@ What's new in version 2.4:<br/>
  
 
 What's new in version 2.3:<br/> 
-1. Kindle Cloud Reader in Austria is now supported<br/> 
+1. Kindle Cloud Reader in Australia is now supported<br/> 
  - https://read.amazon.com.au/<br/> 
 
 What's new in version 2.2:<br/> 
