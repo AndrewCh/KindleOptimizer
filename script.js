@@ -20,7 +20,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 /*  Adjustments of this script made by 
-    Copyright (c) 2018 Andrei Cheremskoy,
+    Copyright (c) 2017 Andrei Cheremskoy,
 	https://GetToCode.com      */
 
 (function () {
@@ -107,7 +107,6 @@ if (typeof w === 'object') {
 					var content = r.cloneContents(); 
 					var text = content.textContent;
 					
-					// This function is not used since 'googtrans' coockie is unavailable for kindle page.
 					function readCookie(name) {
 						var c = kDoc.cookie.split('; '),
 						cookies = {}, i, C;
@@ -117,22 +116,13 @@ if (typeof w === 'object') {
 						}
 						return cookies[name];
 					}
+					//alert(readCookie('googtrans'));
+					var currentLanguage = readCookie('googtrans');
 					
-					function getBrowserLanguage() {
-						var userLang = navigator.language || navigator.userLanguage;
-						userLang = userLang.split('-')[0];
-						return userLang;
+					if(currentLanguage === '' | currentLanguage === 'undefined'){
+						currentLanguage = 'en';
 					}
-					
-					//alert(getBrowserLanguage());
-					
-					var currentLanguage = getBrowserLanguage();
-					
-					// If browser language is English, set target language to Russian in google translate request. 
-					if(typeof currentLanguage === 'undefined' | currentLanguage == 'en'){
-						currentLanguage = 'ru';
-					}
-					var url = 'https://translate.google.com/#auto/' + currentLanguage + '/';
+					var url = 'https://translate.google.com/?hl=en#en/' + currentLanguage + '/';
 					//alert(url);
                     var newTab = window.open(url + text, '_blank');
 					newTab.focus();
