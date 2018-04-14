@@ -1,7 +1,7 @@
 # KindleOptimizer
 Kindle Cloud Reader Chrome Extension
 
-## Current version is 2.5
+## Current version is 2.6
 
 Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.
 Kindle Optimizer helps you
@@ -17,6 +17,9 @@ How to use:<br/>
 1. Add Kindle Optimizer from Chrome Web Store.<br/> 
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
+
+What's new in version 2.6:<br/> 
+- Google Translate target language is set to be the same as browser language. 
 
 What's new in version 2.5:<br/> 
 - Fixed uk domain bug<br/> 
