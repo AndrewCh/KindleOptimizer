@@ -18,6 +18,12 @@ How to use:<br/>
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
 
+What's new in version 2.7:<br/> 
+1. Kindle Cloud Reader in Japan is now supported<br/> 
+ - https://read.amazon.co.jp/<br/> 
+2. Kindle Cloud Reader in India is now supported<br/> 
+ - https://read.amazon.in/<br/> 
+
 What's new in version 2.6:<br/> 
 - Google Translate target language is set to be the same as browser language. 
 
