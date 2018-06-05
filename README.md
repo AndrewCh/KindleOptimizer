@@ -17,6 +17,9 @@ How to use:<br/>
 3. Enjoy!<br/> 
 
 What's new in version 2.7:<br/> 
+Bug fixes<br/> 
+
+What's new in version 2.7:<br/> 
 1. Kindle Cloud Reader in Japan is now supported<br/> 
  - https://read.amazon.co.jp/<br/> 
 2. Kindle Cloud Reader in India is now supported<br/> 

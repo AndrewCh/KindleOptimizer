@@ -128,10 +128,12 @@ if (typeof w === 'object') {
 					
 					var currentLanguage = getBrowserLanguage();
 					
-					// If browser language is English, set target language to Russian in google translate request. 
-					if(typeof currentLanguage === 'undefined' | currentLanguage == 'en'){
-						currentLanguage = 'ru';
+					if(typeof currentLanguage === 'undefined'){
+						currentLanguage = 'en';
+					} else if(currentLanguage === 'he'){
+						currentLanguage = 'iw';
 					}
+					//alert(currentLanguage);
 					var url = 'https://translate.google.com/#auto/' + currentLanguage + '/';
 					//alert(url);
                     var newTab = window.open(url + text, '_blank');
