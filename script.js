@@ -132,7 +132,9 @@ if (typeof w === 'object') {
 						currentLanguage = 'en';
 					} else if(currentLanguage === 'he'){
 						currentLanguage = 'iw';
-					}
+					} else if(currentLanguage === 'zh'){
+						currentLanguage = 'zh-CN';
+					} 
 					//alert(currentLanguage);
 					var url = 'https://translate.google.com/#auto/' + currentLanguage + '/';
 					//alert(url);

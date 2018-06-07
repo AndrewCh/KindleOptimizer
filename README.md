@@ -16,8 +16,11 @@ How to use:<br/>
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
 
-What's new in version 2.7:<br/> 
-Bug fixes<br/> 
+What's new in version 2.9:<br/> 
+- Added support for Simplified Chinese detection in Chrome<br/>
+
+What's new in version 2.8:<br/> 
+- Bug fixes<br/> 
 
 What's new in version 2.7:<br/> 
 1. Kindle Cloud Reader in Japan is now supported<br/> 
