@@ -16,6 +16,9 @@ How to use:<br/>
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
 
+What's new in version 3.0:<br/> 
+- Integrate internationalized url tags<br/> 
+
 What's new in version 2.9:<br/> 
 - Added support for Simplified Chinese detection in Chrome<br/>
 
