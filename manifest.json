@@ -52,6 +52,12 @@
         "*://amazon.it/*",
         "*://www.amazon.it/*",	
         "*://amazon.co.jp/*",
-        "*://www.amazon.co.jp/*"   	
+        "*://www.amazon.co.jp/*",
+		"*://amazon.ca/*",
+		"*://www.amazon.ca/*",
+		"*://amazon.in/*",
+		"*://www.amazon.in/*",
+		"*://amazon.com.au/*",
+		"*://www.amazon.com.au/*"
 	]
 }
