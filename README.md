@@ -16,6 +16,9 @@ How to use:<br/>
 2. Log in to your Kindle Cloud Reader account.<br/> 
 3. Enjoy!<br/> 
 
+What's new in version 3.1:<br/> 
+- Bug fixes<br/> 
+
 What's new in version 3.0:<br/> 
 - Integrate internationalized url tags<br/> 
 

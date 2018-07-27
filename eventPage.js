@@ -19,26 +19,33 @@ function replaceUrlParam(url, paramName, paramValue)
     return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
 }
 
-var tagMap = {
-    ".com": "doggozon-20",
-	".co.uk": "doggozon-21",
-	".de": "doggozon0a-21",
-	".fr": "doggozon05-21",
-	".es": "doggozon03-21",
-	".it": "doggozon0d-21",
-	".co.jp": "doggozon-22"
-};
+var tagMap = [
+    [".com.au", "interior0016b-22"],  // Australia must be checked before US, because .com is a substring of .com.au
+    [".com", "interior0d3-20"],
+	[".co.uk", "interior02-21"],
+	[".de", "interior065-21"],
+	[".fr", "interior04-21"],
+	[".es", "interior03-21"],
+	[".ca", "interior04e-20"],
+	[".in", "interior0b65-21"],
+	[".it", "interior0b3-21"]
+	// I don't think Japan will work
+	// Brazil and Mexico will not accept US address
+];
 
 function getTag(url){
-	for (var tld in tagMap) {
-		if (tagMap.hasOwnProperty(tld)) {
-			if (url.indexOf(tld) != -1){
-				return tagMap[tld];
-			}
+	for (var i=0; i < tagMap.length; i++){
+		var values = tagMap[i];
+
+		var tld = values[0];
+		var tag = values[1];
+
+		if (url.indexOf(tld) != -1){
+			return tag;
 		}
 	}
 	
-	return tagMap[".com"];
+	return "";
 }
 
 chrome.webRequest.onBeforeRequest.addListener(
@@ -71,7 +78,13 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"*://amazon.it/*",
 			"*://www.amazon.it/*",	
 			"*://amazon.co.jp/*",
-			"*://www.amazon.co.jp/*" 
+			"*://www.amazon.co.jp/*",
+			"*://amazon.ca/*",
+			"*://www.amazon.ca/*",
+			"*://amazon.in/*",
+			"*://www.amazon.in/*",
+			"*://amazon.com.au/*",
+			"*://www.amazon.com.au/*"
         ],
         types: ["main_frame", "sub_frame", "stylesheet", "script", "image", "object", "xmlhttprequest", "other"]
     },
