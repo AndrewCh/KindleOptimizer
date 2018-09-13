@@ -45,7 +45,7 @@ w = window;
 if (typeof w === 'object') {
     kObj = w.KindleReaderContextMenu;
     kDoc = w.document;
-   // if (typeof kObj.ACRExtensions === 'undefined') {
+    if (typeof kObj.ACRExtensions === 'undefined') {
         kObj.ACRExtensions = true;
         var oldMethod = kObj.show;
         kObj.show = function () {
@@ -163,9 +163,9 @@ if (typeof w === 'object') {
         };
 
         //alert('Kindle Optimizer is now active.');
-   /* } else {
-        alert('Kindle Optimizer is already active.');
-    }*/
+    } else {
+        //alert('Kindle Optimizer is already active.');
+    }
 } else {
     alert('Error: Kindle Optimizer is not active. The Amazon Cloud Reader window could not be found.');
 }
