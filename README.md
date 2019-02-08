@@ -1,4 +1,6 @@
 # KindleOptimizer
+## I do not maintain this extension anymore, since it was sold to a 3rd party.
+
 [Kindle Cloud Reader Chrome Extension](https://chrome.google.com/webstore/detail/kindle-optimizer/bjfeinekchekdofcdmnfcnbidjkpbgdh)
 
 Adds instant Google Search and Translate functionality to the Kindle Cloud Reader.
